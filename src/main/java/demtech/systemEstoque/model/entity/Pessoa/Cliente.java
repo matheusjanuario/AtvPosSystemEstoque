@@ -1,4 +1,4 @@
-package demtech.systemEstoque.model.entity.Cliente;
+package demtech.systemEstoque.model.entity.Pessoa;
 
 public class Cliente {
     private Long idCliente;

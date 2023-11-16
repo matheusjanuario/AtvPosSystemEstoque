@@ -1,4 +1,4 @@
-package demtech.systemEstoque.model.entity;
+package demtech.systemEstoque.model.entity.Comercial;
 
 public class Produto {
     private Long idProduto;

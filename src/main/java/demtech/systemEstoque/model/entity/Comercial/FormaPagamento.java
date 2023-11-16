@@ -1,4 +1,4 @@
-package demtech.systemEstoque.model.entity.Pedido;
+package demtech.systemEstoque.model.entity.Comercial;
 
 public class FormaPagamento {
     private Long idPagamento;

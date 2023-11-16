@@ -1,4 +1,4 @@
-package demtech.systemEstoque.model.entity.Pedido;
+package demtech.systemEstoque.model.entity.Comercial;
 
 import javax.xml.crypto.Data;
 
