@@ -1,3 +1,4 @@
+/* Matheus Januario 15/11/2023 */
 package demtech.systemEstoque.model.entity.Pessoa;
 
 //"extends Cliente", representa que Cliente PJ herda as caracteristicas de Cliente
