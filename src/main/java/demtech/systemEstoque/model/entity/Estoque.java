@@ -2,9 +2,11 @@
 package demtech.systemEstoque.model.entity;
 
 import demtech.systemEstoque.model.entity.Comercial.Produto;
+import jakarta.persistence.Entity;
 
 import java.util.Set;
 
+@Entity
 public class Estoque {
     private Long idEstoque;
     private Integer corredor;

@@ -2,10 +2,11 @@
 package demtech.systemEstoque.model.entity.Comercial;
 
 import demtech.systemEstoque.model.entity.Pessoa.Cliente;
+import jakarta.persistence.Entity;
 
 import javax.xml.crypto.Data;
 import java.util.Set;
-
+@Entity
 public class Pedido {
 
 
