@@ -18,4 +18,7 @@ public class Pedido {
     private Set<ItensPedido> itensPedidos;
     private Set<Cliente> clientes;                  /*Pode haver 0 cliente ou N clientes realizando pedido*/
     private FormaPagamento formaPagamento;           /*Pedido deve conter 1 forma de pagamento*/
+
+    private Produto produtos;
+
 }
