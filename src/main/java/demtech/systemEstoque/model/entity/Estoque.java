@@ -3,11 +3,16 @@ package demtech.systemEstoque.model.entity;
 
 import demtech.systemEstoque.model.entity.Comercial.Produto;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 import java.util.Set;
 
 @Entity
 public class Estoque {
+    @Id             /* Indica que é a chave ID para tabela que é auto incremento */
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idEstoque;
     private Integer corredor;
     private Integer prateleira;
