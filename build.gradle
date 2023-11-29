@@ -14,7 +14,7 @@ java {
 repositories {
 	mavenCentral()
 }
-/*Referenciando as dependencias do JPA para funcionamento do gradle e driver de conexão - Matheus Januario 18/11/2023 */
+
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
