@@ -3,6 +3,8 @@ package demtech.systemEstoque.model.entity;
 
 import demtech.systemEstoque.model.entity.Comercial.Produto;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.DecimalMax;
+import jakarta.validation.constraints.NotNull;
 
 import java.util.Set;
 
@@ -16,9 +18,12 @@ public class Estoque {
     @Id             /* Indica que é a chave ID para tabela que é auto incremento */
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idEstoque;
+    @NotNull
     private Integer corredor;
+    @NotNull
     private Integer prateleira;
     private Integer estoqueMinimo;
+
     private Integer estoqueAlto;
 
     /*16/11/2023 Ligações das Classes*/

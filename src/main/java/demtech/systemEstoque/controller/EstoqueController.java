@@ -2,6 +2,7 @@ package demtech.systemEstoque.controller;
 
 import demtech.systemEstoque.model.entity.Estoque;
 import demtech.systemEstoque.model.repository.EstoqueRepository;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,7 +31,7 @@ public class EstoqueController {
 
     //CRIACAO DE ESTOQUE
     @PostMapping
-    public Estoque saveEstoque(@RequestMapping Estoque estoque){
+    public Estoque saveEstoque(@RequestBody @Valid Estoque estoque){
         return estoqueRepository.save(estoque);
     }
 
@@ -42,7 +43,7 @@ public class EstoqueController {
 
     //atualiza os dados de estoque
     @PutMapping("/{id}")
-        public Estoque updateEstoque(@PathVariable Long id, @RequestBody Estoque estoque){
+        public Estoque updateEstoque(@PathVariable Long id, @RequestBody @Valid Estoque estoque){
             Estoque estoqueAux = estoqueRepository.getReferenceById(id);
 
             estoqueAux.setProdutos(estoque.getProdutos());
@@ -53,4 +54,4 @@ public class EstoqueController {
             return estoqueRepository.save(estoqueAux);
         }
     }
-}
+
